@@ -33,12 +33,13 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import connect4.Board;
 import connect4.MiniMaxAi;
 import connect4.Move;
-import enumeration.Color;
-import enumeration.GameMode;
-import enumeration.GuiStyle;
-import utility.Constants;
-import utility.GameParameters;
-import utility.ResourceLoader;
+import enumerations.Color;
+import enumerations.GuiStyle;
+import enumerations.GameMode;
+import utilities.Constants;
+
+import utilities.GameParameters;
+import utilities.ResourceLoader;
 
 
 public class Connect4Gui {
@@ -217,7 +218,7 @@ public class Connect4Gui {
 					
 					if (!board.isOverflow()) {
 						boolean isGameOver = game();
-						if (GameParameters.gameMode == GameMode.HUMAN_VS_MINIMAX_AI && !isGameOver) { 
+						if (GameParameters.gameMode == GameMode.HUMAN_VS_MINIMAX_AI && !isGameOver) {
 							aiMove(ai);
 						}
 					}

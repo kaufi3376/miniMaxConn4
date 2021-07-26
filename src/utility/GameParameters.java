@@ -1,8 +1,8 @@
 package utility;
 
-import enumeration.Color;
-import enumeration.GameMode;
-import enumeration.GuiStyle;
+import enumerations.Color;
+import enumerations.GameMode;
+import enumerations.GuiStyle;
 
 public class GameParameters {
 	
